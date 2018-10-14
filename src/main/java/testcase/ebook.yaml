@@ -1,0 +1,29 @@
+config:
+  baseurl: "https://m.igetget.com"
+testcase1:
+  name: "电子书详情页接口--请求正常"
+  pathurl: "/hybrid/api/v1/ebook/detail"
+  method: "post"
+  params:
+    bid: 3210
+    userInfo:
+      uid: "229461915"
+  header:
+    Content-Type: "application/json"
+  cookies: ""
+  validate: []
+
+testcase2:
+  name: "电子书详情页接口--uid不存在"
+  pathurl: "/hybrid/api/v1/ebook/detail1"
+  method: "post"
+  params: ""
+    bid: 3210
+    userInfo:
+      uid: ""
+  header:
+    Content-Type: "application/json"
+  cookies: ""
+  validate: []
+
+

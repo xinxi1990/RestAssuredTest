@@ -1,0 +1,4 @@
+.idea
+*.class
+config.java
+target
